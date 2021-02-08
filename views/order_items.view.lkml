@@ -129,6 +129,7 @@ measure: pct_total_revenue {
     filters: [status: "-Cancelled, -Returned"]
     sql:${TABLE}."SALE_PRICE" ;;
     value_format_name:usd
+    drill_fields: [products.category,products.brand, products.name,sale_price]
   }
 
   measure: Total_Gross_Margin_Amount {

@@ -38,8 +38,8 @@ view: products {
     link: {
 
       label: "Brand Comparisons"
-
-      url: "/dashboards/16?Category={{ value | url_encode }}&Brand={{ _filters['products.brand'] | url_encode }}"
+      url: "/dashboards/26?Brand={{ value | url_encode }}"
+      #url: "/dashboards/26?Category={{ value | url_encode }}&Brand={{ _filters['products.brand'] | url_encode }}"
 
     }
 
