@@ -70,6 +70,7 @@ view: users {
   }
 
   dimension: state {
+    map_layer_name: us_states
     type: string
     sql: ${TABLE}."STATE" ;;
   }
@@ -80,6 +81,7 @@ view: users {
   }
 
   dimension: zip {
+    map_layer_name: us_zipcode_tabulation_areas
     type: zipcode
     sql: ${TABLE}."ZIP" ;;
   }
